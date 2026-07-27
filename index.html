@@ -1,462 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content=" portfolio,  full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description" content="Welcome to mouni's Portfolio. Full-Stack Web Developer " />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link id='favicon' rel="shortcut icon" href="mouni.jpg" type="image/x-png">
-    <title>Portfolio | Mounika Rangisetty</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content=" portfolio,  full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+  <meta name="description" content="Welcome to mouni's Portfolio. Full-Stack Web Developer " />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link id='favicon' rel="shortcut icon" href="./assets/images/mouni.jpg" type="image/x-png">
+  <title>Portfolio | Mounika Rangisetty</title>
 </head>
+
 <body oncontextmenu="return false">
 
-<!-- pre loader -->
-<!-- <div class="loader-container">
+  <!-- pre loader -->
+  <!-- <div class="loader-container">
   <img draggable="false" src="./assets/images/preloader.gif" alt="">
 </div> -->
 
-<header>
-        <a href="/" class="logo"><i class="fas fa-user"></i> mounika</a>
-        
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-          <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#education">Education</a></li>
-          </ul>
-      </nav>
-</header>
-<!-- navbar ends -->
+  <header>
+    <a href="#home" class="logo"><span class="logo-symbol">&lt;</span>Mounika<span class="logo-accent">.Dev
+        /&gt;</span></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
 
 
-<!-- hero section starts -->
-<section class="home" id="home">
+  <!-- hero section starts -->
+  <section class="home" id="home">
     <div id="particles-js"></div>
 
-  <div class="content">
+    <div class="content">
       <br><br>
-    <h2>Hi There, I'm <br/> Mounika <span>Rangisetty </span></h2>
-    <p>i am into <span class="typing-text">Full Stack web development | DevOps | UI/UX design | Machine Learning</span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="socials">
+      <h2>Hi There, I'm <br /> Mounika <span>Rangisetty </span></h2>
+      <p>i am into <span class="typing-text">Full Stack Developer | DevOps Engineer | GenAI Integration</span></p>
+      <a href="#about" class="btn"><span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/mounika-rangisetty" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="https://github.com/MounikaRangisetty/" target="_blank"><i class="fab fa-github"></i></a></li>
-          </ul>
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/mounika-rangisetty"
+              target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/MounikaRangisetty/" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="image">
-    <img draggable="false" class="tilt" src="mouni.jpg" alt="">
-  </div>
-</section>
+    <div class="hero-terminal tilt">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">mounika@dev-machine:~</span>
+      </div>
+      <div class="terminal-body" id="terminal-terminal">
+        <div class="terminal-history">
+          <div class="code-line"><span class="cmd">$</span> npm init developer --name mounika</div>
+          <div class="code-line output">&gt; Initializing developer profile...</div>
+          <div class="code-line"><span class="cmd">$</span> cat skills.json</div>
+          <div class="code-line output">
+            <pre>{
+  "role": "Full Stack & DevOps",
+  "skills": ["React", "Node", "GCP", "AWS", "Docker", "GenAI"],
+  "focus": "Automating CI/CD & scaling REST APIs",
+  "status": "Building things with LLMs"
+}</pre>
+          </div>
+          <div class="code-line"><span class="cmd">$</span> node start_innovation.js</div>
+          <div class="code-line output">&gt; Integrating multi-LLM workflows... <span class="status-badge">ONLINE</span></div>
+          <div class="code-line output">&gt; Orchestrating cloud architectures... <span class="status-badge success">DEPLOYED</span></div>
+        </div>
+        <div class="code-line input-line">
+          <span class="cmd">$</span>
+          <span id="terminal-typed-text"></span>
+          <span class="terminal-cursor">_</span>
+          <input type="text" id="terminal-stdin" autocomplete="off" spellcheck="false" placeholder="type 'help'..." />
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="about" id="about">
+  <section class="about" id="about">
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
+
     <div class="row">
 
-    <div class="image">
-        <img draggable="false" class="tilt" src="mounika.jpg" alt="">
-    </div>
-    <div class="content">
-        <h3>I'm Mounika</h3>
-       <span class="tag">Full Stack Web Developer</span>
-        
-       <p> Aspiring and detail-oriented Computer Science and Engineering student with hands-on experience in full-stack development, DevOps, and data science. Seeking a challenging and growth-oriented opportunity where I can leverage my technical and problem-solving skills to contribute to innovative projects, deliver scalable solutions, and enhance my professional expertise in software development and machine learning.</p>
-        
-        <div class="box-container">
-            <div class="box">
-              <p><span> phone : </span> +91 9381751393</p>
-              <p><span> email : </span> mounikarangisetty8@gmail.com</p>
-              <p><span> place : </span>  India </p>
-            </div>
+      <div class="about-pillars">
+        <div class="pillar-card tilt">
+          <div class="icon-box"><i class="fas fa-layer-group"></i></div>
+          <div class="pillar-info">
+            <h4>Full Stack</h4>
+            <p>Building secure APIs & interactive UIs</p>
+          </div>
         </div>
-        
-        <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1pN87QCSvwImtNcYTpEQWs-qJ1o9vr24o/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
+        <div class="pillar-card tilt">
+          <div class="icon-box"><i class="fas fa-server"></i></div>
+          <div class="pillar-info">
+            <h4>DevOps</h4>
+            <p>Automating CI/CD & cloud orchestration</p>
+          </div>
         </div>
-
-    </div>
-    </div>
-</section>
-
-
-
-<section class="skills" id="skills">
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-    <div class="container">
-          <div class="row" id="skillsContainer">
-            <div class="bar">
-              <div class="info">
-                <img src="DevOps.png"/>
-                <span>DevOps</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/?size=64&id=wU62u24brJ44&format=png"/>
-                <span>AWS</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="NodeJs.png"/>
-                <span>Node</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://cdn2.iconfinder.com/data/icons/leto-blue-web-marketing-content-3/64/_-14-48.png"/>
-                <span>UI/UX<br>design</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-48.png"/>
-                <span>React JS</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/256_Php-48.png"/>
-                <span>PHP</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img  src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-48.png"/>
-                <span>HTML5</span>
-              </div>
-            </div> 
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/?size=48&id=x7XMNGh2vdqA&format=png"/>
-                <span>Tailwind<br>CSS</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/java-script-48.png"/>
-                <span>JavaScript</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/?size=80&id=HcQEdKCkXUs3&format=png"/>
-                <span>TypeScript</span>
-              </div>
-            </div> 
-            <div class="bar">
-              <div class="info">
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-48.png"/>
-                <span>My SQL</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://cdn3.iconfinder.com/data/icons/basic-ui-elements-2-4-filled-outline-45/512/Basic_UI_Elements_2.4_-_Filled_Outline_-_45-45-48.png"/>
-                <span>AI/ML</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-java-software-develop-command-language-48.png"/>
-                <span>Java</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-48.png"/>
-                <span>PYTHON</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img  src="https://cdn0.iconfinder.com/data/icons/programming-1-1/32/Programming_C-4-48.png"/>
-                <span>C</span>
-              </div>
-            </div> 
-            <div class="bar">
-              <div class="info">
-                <img src="postman.png"/>
-                <span>Postman</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://cdn4.iconfinder.com/data/icons/socialcones/508/Github-256.png"/>
-                <span>github</span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://www.svgrepo.com/show/452210/git.svg"/>
-                <span>git</span>
-              </div>
-            </div>
-      </div>
-  </div>
-</section>
-
-
-<section class="experience" id="experience">
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Work <span>Experience</span></h2>
-  <div class="box-container">
-    <div class="box">
-      <div class="content">
-        <div class="tag">
-          <h3>Software Intern</h3>
-        </div>
-        <div class="desc">
-          <h3>Edubot Software and Services</h3>
-          <p>Currently working as Software intern at Edubot Software and Services.</p>
-          <h4>Role: Full Stack Developer</h4>
-          <ul>
-            <li>Developing scalable APIs and integrated AI models into backend.</li>
-            <li>Resolved errors and optimized database performance.</li>
-            <li>Contributed to front-end development, including implementing UI components, integrating API calls, improving user experience.</li>
-          </ul>
-          <h4>Role: DevOps Intern</h4>
-          <ul>
-            <li>Working with AWS and GCP for deployment and monitoring.</li>
-            <li>Built and optimized CI/CD pipelines and automated tasks.</li>
-            <li>Implemented monitoring tools to track performance and system health.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  <div class="box">
-      <div class="content">
-        <div class="tag">
-          <h3>Full Stack Java Developer Intern</h3>
-        </div>
-        <div class="desc">
-          <h3>Maang Technologies</h3>
-          <p>Worked as a Java Full Stack Developer Intern at Maang Technologies.</p>
-          <p><b>Skills:</b> React, Spring Boot, Node, Git, MongoDB</p>
-        </div>
-      </div>
-    </div>
-  </div> 
-</section>
-
-
-<section class="work" id="work">
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-  <div class="box-container">
-     <div class="box tilt">
-      <img draggable="false" src="samastha.png" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Samastha</h3>
-        </div>
-        <div class="desc">
-          <p>Samastha is a white-labeled subscription-based platform designed to facilitate and streamline the process for students who are interested in studying abroad. The platform offers a variety of tools, resources, and interactive features to help students make informed decisions, navigate the application process, and connect with the right Organizations. It also ensures that students have personalized, timely guidance throughout their study-abroad journey.</p>
-          <div class="btns">
-            <a href="https://future-quest-frontend.vercel.app/" class="btn" target="_blank">View <i class="fas fa-code"></i></a>
+        <div class="pillar-card tilt">
+          <div class="icon-box"><i class="fas fa-brain"></i></div>
+          <div class="pillar-info">
+            <h4>Generative AI</h4>
+            <p>Orchestrating multi-LLM app integrations</p>
           </div>
         </div>
       </div>
-    </div> 
-  </div>
+      <div class="content">
+        <h3>I'm Mounika Rangisetty</h3>
+        <span class="tag">Full Stack Developer & DevOps Engineer</span>
 
-  <div class="box-container">
-  <div class="box tilt">
-   <img draggable="false" src="Screenshot (301).png" alt="" />
-   <div class="content">
-     <div class="tag">
-     <h3>Music Website</h3>
-     </div>
-     <div class="desc">
-       <p>This is the music website I designed for my college Performing Arts Department.</p>
-       <div class="btns">
-         <a href="http://performingartsdepartment.kesug.com/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-       </div>
-     </div>
-   </div>
-  </div> 
+        <p>Results-driven Computer Science and Engineering graduate with comprehensive expertise in full-stack web
+          application development, DevOps automation, and Generative AI integration. Highly skilled in designing robust
+          backend REST APIs (Node.js/Express), crafting responsive dynamic UIs (React, Tailwind CSS), and deploying
+          cloud applications on GCP and AWS. Proven success in team-oriented project environments, implementing
+          end-to-end CI/CD pipelines, optimizing MySQL database queries, and debugging multi-LLM workflows to scale
+          system performance.</p>
 
-</div>
-
-<div class="box-container">
-
-  <div class="box tilt">
-   <img draggable="false" src="adversarial.png" alt="" />
-   <div class="content">
-     <div class="tag">
-     <h3>Enhancing Robustness of Neural Networks against Adversarial Attacks</h3>
-     </div>
-     <div class="desc">
-       <p>
-        Investigate and mitigate the impact of adversarial attacks on machine learning models, and develop effective defenses to improve model robustness and security. 
-       <div class="btns">
-        <a href="https://colab.research.google.com/drive/14mC9-du_aenWhsQMrt_rUOcfSyi1E7i7#scrollTo=aGrkQarm97Ye" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-       </div>
-     </div>
-   </div>
- </div> </div>
-
-</section>
-
-
-<section class="education" id="education">
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-  <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-  <div class="box-container">
-    <div class="box">
-        <div class="image">
-        <img draggable="false" src="rgukt.jpeg"  alt="">
+        <div class="box-container">
+          <div class="box">
+            <p><span> phone : </span> +91 9381751393</p>
+            <p><span> email : </span> mounikarangisetty8@gmail.com</p>
+            <p><span> place : </span> Andhra Pradesh, India</p>
+          </div>
         </div>
-        <div class="content">
-        <h3>B.Tech | Computer Science and Engineering</h3>
-        <p>Rajiv Gandhi University of Knowledge and Technologies , Nuzvid</p>
-        <h4>2021-2025 | Pursuing</h4>
-        </div>
-    </div>
-   </div>
 
-   <div class="box-container">
-    <div class="box">
-        <div class="image">
-        <img draggable="false" src="rgukt.jpeg"  alt="">
+        <div class="resumebtn">
+          <a href="https://docs.google.com/document/d/1Aml5LcuGEfGqnvdVPVwwRQGO1ErPLyie/edit?usp=sharing&ouid=112890101920405745059&rtpof=true&sd=true"
+            target="_blank" class="btn"><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
         </div>
-        <div class="content">
-        <h3>Pre University Course</h3>
-        <p>Rajiv Gandhi University of Knowledge and Technologies , Nuzvid</p>
-        <h4>2019-2021</h4>
-        </div>
-    </div>
-   </div>
 
-   <div class="box-container">
-    <div class="box">
-        <div class="image">
-        <img draggable="false" style="height: 120px; width: 120px; object-fit: contain;" src="https://cdn4.iconfinder.com/data/icons/school-pack-5/24/School-64.png"  alt="">
-        </div>
-        <div class="content">
-        <h3>Board of Secondary Education</h3>
-        <p>S.K.B.M.M.CHigh School, Guntur</p>
-        <h4>2018-2019</h4>
-        </div>
-    </div>
-   </div>
-</section>
-
-
-<!-- 
-<section class="contact" id="contact">
-  
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="contact.png" alt="">
       </div>
-    <form id="contact-form">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
-  </div>
-</section> -->
+    </div>
+  </section>
 
-<section class="footer">
 
-  <div class="box-container">
 
-      <div class="box">
-          <h3>Mounika's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. </p>
-      </div>
+  <section class="skills" id="skills">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+    <div class="container">
+      <div class="skills-grid">
 
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i>Experience</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-       </div>
-
-      <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+91 9381751393</p>
-          <p> <i class="fas fa-envelope"></i>mounikarangisetty8@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>India</p>
-          <div class="share">
-
-              <a href="https://www.linkedin.com/in/mounika-rangisetty-244719261" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/MounikaRangisetty/" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+        <!-- Backend Development -->
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+          <div class="skills-list">
+            <div class="bar">
+              <div class="info"><img src="./assets/images/NodeJs.png" /><span>Node.js</span></div>
             </div>
+            <div class="bar">
+              <div class="info"><img src="https://img.icons8.com/?size=48&id=54087&format=png" /><span>Express.js</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img src="https://img.icons8.com/?size=48&id=22385&format=png" /><span>RESTful
+                  APIs</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-48.png" /><span>MySQL</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/256_Php-48.png" /><span>PHP</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-java-software-develop-command-language-48.png" /><span>Java</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-48.png" /><span>Python</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn0.iconfinder.com/data/icons/programming-1-1/32/Programming_C-4-48.png" /><span>C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend Development -->
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skills-list">
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-48.png" /><span>React.js</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/java-script-48.png" /><span>JavaScript</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://img.icons8.com/?size=80&id=HcQEdKCkXUs3&format=png" /><span>TypeScript</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img src="https://img.icons8.com/?size=48&id=x7XMNGh2vdqA&format=png" /><span>Tailwind
+                  CSS</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR5qEvafJLBSaBOtXhQJA5WrYNTNeBwsWBOM9KVLUQ8A&s=10" /><span>TanStack
+                  Router</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-48.png" /><span>HTML5</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img src="https://img.icons8.com/?size=48&id=21278&format=png" /><span>CSS3</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSebpk8AZpGklpMqMbMCXQpWGixkL-liIf5zJyvzhaYsg&s=10" /><span>Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skill-category">
+          <h3>Cloud & DevOps</h3>
+          <div class="skills-list">
+            <div class="bar">
+              <div class="info"><img
+                  src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000" /><span>GCP</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img src="https://img.icons8.com/?size=64&id=wU62u24brJ44&format=png" /><span>AWS</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img src="https://img.icons8.com/?size=48&id=22813&format=png" /><span>Docker</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img src="./assets/images/DevOps.png" /><span>CI/CD</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img src="https://www.svgrepo.com/show/452210/git.svg" /><span>Git</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn4.iconfinder.com/data/icons/socialcones/508/Github-256.png" /><span>GitHub</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img src="./assets/images/postman.png" /><span>Postman</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI / ML & GenAI -->
+        <div class="skill-category">
+          <h3>AI / ML & GenAI</h3>
+          <div class="skills-list">
+            <div class="bar">
+              <div class="info"><img
+                  src="https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg" /><span>Gemini
+                  API</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=000000" /><span>OpenAI
+                  API</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://img.icons8.com/?size=100&id=zQjzFjPpT2Ek&format=png&color=000000" /><span>Claude
+                  API</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://cdn3.iconfinder.com/data/icons/basic-ui-elements-2-4-filled-outline-45/512/Basic_UI_Elements_2.4_-_Filled_Outline_-_45-45-48.png" /><span>AWS
+                  Bedrock</span></div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://img.icons8.com/?size=100&id=O6SWwpPIM0GB&format=png&color=000000" /><span>PyTorch</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info"><img
+                  src="https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000" /><span>TensorFlow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-  </div>
 
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/mounika-rangisetty-244719261"> MOUNIKA</a></h1>
-
-</section>
-
-
-
-
-
-
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
-</script>
+      <div class="soft-skills">
+        <h3>Soft Skills</h3>
+        <p>Analytical Problem Solving &bull; Cross-Functional Teamwork &bull; Leadership &bull; Time Management &bull;
+          Adaptability &bull; Learning Agility</p>
+      </div>
+    </div>
+  </section>
 
 
-<script src="./assets/js/script.js"></script>
+  <section class="experience" id="experience">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Work <span>Experience</span></h2>
+    <div class="box-container">
+      
+      <!-- Junior Software Developer Role -->
+      <div class="box">
+        <div class="content">
+          <div class="tag">
+            <h3>Junior Software Developer (Full Stack & DevOps)</h3>
+          </div>
+          <div class="desc">
+            <h3>Edubot Station Pvt Ltd</h3>
+            <p class="duration">Aug 2025 – Present</p>
+            <ul>
+              <li>Designed and deployed scalable RESTful APIs in Node.js/Express, seamlessly integrating multi-LLM
+                services (Azure OpenAI, Gemini, Claude) into backend workflows.</li>
+              <li>Engineered cloud infrastructure solutions across AWS and GCP; authored internal automation scripts to
+                streamline CI/CD deployment and model monitoring.</li>
+              <li>Optimized backend database queries in MySQL, significantly reducing API query latency and enhancing
+                application responsiveness.</li>
+              <li>Monitored GenAI endpoint reliability, systematically documented root causes of model errors, and
+                resolved production bugs to ensure continuous system health.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Software Intern Role -->
+      <div class="box">
+        <div class="content">
+          <div class="tag">
+            <h3>Software Intern (Full Stack & DevOps)</h3>
+          </div>
+          <div class="desc">
+            <h3>Edubot Station Pvt Ltd</h3>
+            <p class="duration">Aug 2024 – Jul 2025</p>
+            <ul>
+              <li>Developed scalable APIs and integrated AI models into backend workflows.</li>
+              <li>Worked with AWS and GCP environments for application deployment and monitoring.</li>
+              <li>Built and optimized automated CI/CD pipelines to streamline deployment cycles.</li>
+              <li>Optimized backend MySQL database queries and implemented system monitoring tools to track health.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="work" id="work">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+    <div class="box-container">
+
+      <!-- Positions (CareerX) -->
+      <div class="box tilt">        <img draggable="false" src="./assets/images/careerx_positions.png" alt="Positions (CareerX)" />
+        <div class="content">
+          <div class="tag">
+            <h3>Positions (CareerX)</h3>
+          </div>
+          <div class="desc">
+            <p>Collaborated in a development team to build recruitment modules, candidate workflows, and dynamic
+              ATS-ready resumes with Gemini & OpenAI APIs. Deployed CI/CD on GCP.</p>
+            <p class="techs">React, Node.js, Express, MySQL, GCP, CI/CD</p>
+            <div class="btns">
+              <a href="https://www.careerxcelerator.io/" class="btn" target="_blank">View <i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CareerXcelerator -->
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/careerx.png" alt="CareerXcelerator" />
+        <div class="content">
+          <div class="tag">
+            <h3>CareerXcelerator</h3>
+          </div>
+          <div class="desc">
+            <p>Designed and built interactive user interfaces. Engineered robust multi-LLM (Azure OpenAI, Claude,
+              Gemini) prompt-response logic to power personalized student career guidance.</p>
+            <p class="techs">React, Tailwind CSS, TanStack Router, Multi-LLM, AWS</p>
+            <div class="btns">
+              <a href="https://www.careerxcelerator.io/" class="btn" target="_blank">View <i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samastha -->
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/samastha.png" alt="Samastha" />
+        <div class="content">
+          <div class="tag">
+            <h3>Samastha</h3>
+          </div>
+          <div class="desc">
+            <p>Developed multi-tier backend REST APIs facilitating smooth communication across stakeholders. Resolved
+              production bugs in LLM response handling to improve query speed.</p>
+            <p class="techs">React, Node.js, Express, MySQL, AWS Bedrock (Claude, Gemini)</p>
+            <div class="btns">
+              <a href="https://www.samasthaedge.com/" class="btn" target="_blank">View <i
+                  class="fas fa-eye"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adversarial Attacks NN -->
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/adversarial.png" alt="Adversarial Attacks" />
+        <div class="content">
+          <div class="tag">
+            <h3>Neural Network Robustness</h3>
+          </div>
+          <div class="desc">
+            <p>Researched adversarial attack mechanisms on deep learning models and engineered effective mathematical
+              defenses in PyTorch/TensorFlow to strengthen model security.</p>
+            <p class="techs">Python, PyTorch, TensorFlow, NumPy, Pandas, Matplotlib</p>
+            <div class="btns">
+              <a href="https://github.com/MounikaRangisetty/Enhancing-Robustness-of-Neural-Networks-against-Adversarial-Attacks"
+                class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="viewall">
+      <a href="https://github.com/MounikaRangisetty?tab=repositories" class="btn" target="_blank">
+        <span>More Projects</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="education" id="education">
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/rgukt.jpeg" alt="RGUKT Nuzvid">
+        </div>
+        <div class="content">
+          <h3>B.Tech | Computer Science and Engineering</h3>
+          <p>Rajiv Gandhi University of Knowledge and Technologies, Nuzvid</p>
+          <p class="cgpa">CGPA: 9.0 / 10.0</p>
+          <h4>2021 - 2025</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/rgukt.jpeg" alt="RGUKT Nuzvid">
+        </div>
+        <div class="content">
+          <h3>Pre University Course (M.Bi.P.C)</h3>
+          <p>Rajiv Gandhi University of Knowledge and Technologies, Nuzvid</p>
+          <p class="cgpa">CGPA: 9.51 / 10.0</p>
+          <h4>2019 - 2021</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img draggable="false" style="height: 120px; width: 120px; object-fit: contain;"
+            src="https://cdn4.iconfinder.com/data/icons/school-pack-5/24/School-64.png" alt="High School">
+        </div>
+        <div class="content">
+          <h3>Board of Secondary Education (10th)</h3>
+          <p>S.K.B.M.M.C High School, Guntur</p>
+          <p class="cgpa">CGPA: 10.0 / 10.0</p>
+          <h4>2018 - 2019</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    
+    <div class="contact-container">
+      
+      <!-- Email Card -->
+      <a href="mailto:mounikarangisetty8@gmail.com" class="contact-card tilt">
+        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+        <h3>Email</h3>
+        <p>mounikarangisetty8@gmail.com</p>
+        <span class="action-btn">Send Message <i class="fas fa-paper-plane"></i></span>
+      </a>
+
+      <!-- LinkedIn Card -->
+      <a href="https://www.linkedin.com/in/mounika-rangisetty-244719261" target="_blank" class="contact-card tilt">
+        <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
+        <h3>LinkedIn</h3>
+        <p>mounika-rangisetty-244719261</p>
+        <span class="action-btn">Let's Connect <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+      <!-- GitHub Card -->
+      <a href="https://github.com/MounikaRangisetty/" target="_blank" class="contact-card tilt">
+        <div class="icon-box"><i class="fab fa-github"></i></div>
+        <h3>GitHub</h3>
+        <p>MounikaRangisetty</p>
+        <span class="action-btn">Explore Repos <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Mounika's Portfolio</h3>
+        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. </p>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <a href="#experience"><i class="fas fa-chevron-circle-right"></i>Experience</a>
+        <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-phone"></i>+91 9381751393</p>
+        <p> <i class="fas fa-envelope"></i>mounikarangisetty8@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>Andhra Pradesh, India</p>
+        <div class="share">
+
+          <a href="https://www.linkedin.com/in/mounika-rangisetty-244719261" class="fab fa-linkedin"
+            aria-label="LinkedIn" target="_blank"></a>
+          <a href="https://github.com/MounikaRangisetty/" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+        href="https://www.linkedin.com/in/mounika-rangisetty-244719261"> MOUNIKA</a></h1>
+
+  </section>
+
+
+
+
+
+
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- typed.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- particle.js links -->
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+  </script>
+
+
+  <script src="./assets/js/script.js"></script>
 
 </body>
+
 </html>
