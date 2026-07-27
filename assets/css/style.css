@@ -1218,15 +1218,59 @@ header .navbar ul li a:hover {
   border: 1px solid rgba(0, 0, 0, 0.05);
   padding: 3.5rem 2rem;
   border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  text-transform: none;
+  text-decoration: none;
+  color: inherit;
 }
-
-form .field input,
-form .message textarea {
-  width: 100%;
-  height: 100%;
-  outline: none;
+.contact .contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(37, 6, 173, 0.12);
+  border-color: rgba(37, 6, 173, 0.2);
 }
-
+.contact .contact-card .icon-box {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 6, 173, 0.05);
+  color: #2506ad;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+.contact .contact-card:hover .icon-box {
+  background: #2506ad;
+  color: #fff;
+}
+.contact .contact-card h3 {
+  font-size: 2.2rem;
+  color: #0e2431;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.contact .contact-card p {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+  text-transform: none;
+  font-family: "Nunito", sans-serif;
+}
+.contact .contact-card .action-btn {
+  font-size: 1.4rem;
+  color: #2506ad;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: 0.3s;
+}
+.contact .contact-card:hover .action-btn {
+  color: #ff7b00;
+}
 /* contact section media queries starts */
 @media (max-width: 900px) {
   .contact .contact-container {
@@ -1235,7 +1279,6 @@ form .message textarea {
     padding: 0;
   }
 }
-
 /* contact section media queries ends */
 /* contact section ends */
 
