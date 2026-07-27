@@ -1195,51 +1195,55 @@ header .navbar ul li a:hover {
 
 /* contact section starts */
 .contact {
-  background: #e5ecfb;
-  min-height: 50vh;
-  padding: 4rem 2rem;
+  background: #f9f9f9;
+  min-height: auto;
+  padding: 8rem 2rem 6rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
-
+.contact h2 {
+  color: #0e2431;
+}
+.contact h2 span {
+  color: #2506ad;
+}
 .contact .contact-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  max-width: 1050px;
-  margin: 3rem auto;
+  max-width: 1000px;
+  margin: 4rem auto 1rem auto;
   padding: 0 2rem;
 }
-
 .contact .contact-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 3.5rem 2rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
   transition: all 0.3s ease;
   text-transform: none;
   text-decoration: none;
-  color: inherit;
+  color: #334155;
 }
 .contact .contact-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(37, 6, 173, 0.12);
-  border-color: rgba(37, 6, 173, 0.2);
+  transform: translateY(-4px);
+  border-color: #2506ad;
+  box-shadow: 0 10px 20px rgba(37, 6, 173, 0.05);
 }
 .contact .contact-card .icon-box {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(37, 6, 173, 0.05);
+  background: #f1f5f9;
   color: #2506ad;
-  font-size: 2.8rem;
-  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
   transition: 0.3s;
 }
 .contact .contact-card:hover .icon-box {
@@ -1247,25 +1251,26 @@ header .navbar ul li a:hover {
   color: #fff;
 }
 .contact .contact-card h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #0e2431;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 .contact .contact-card p {
   font-size: 1.4rem;
-  color: #666;
-  margin-bottom: 2.5rem;
+  color: #64748b;
+  margin-bottom: 2rem;
   text-transform: none;
   font-family: "Nunito", sans-serif;
+  word-break: break-all;
 }
 .contact .contact-card .action-btn {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #2506ad;
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.6rem;
   transition: 0.3s;
 }
 .contact .contact-card:hover .action-btn {
@@ -1275,7 +1280,7 @@ header .navbar ul li a:hover {
 @media (max-width: 900px) {
   .contact .contact-container {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
     padding: 0;
   }
 }

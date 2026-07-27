@@ -44,10 +44,10 @@ $(document).ready(function () {
     if ($('.typing-text').length) {
         new Typed('.typing-text', {
             strings: [
-                'Full Stack Developer',
-                'DevOps Engineer',
-                'GenAI Integration Expert',
-                'Machine Learning Practitioner'
+                'Full Stack Devlopment ',
+                'DevOps/Cloud ',
+                'GenAI Integration ',
+                'Machine Learning '
             ],
             typeSpeed: 50,
             backSpeed: 25,
