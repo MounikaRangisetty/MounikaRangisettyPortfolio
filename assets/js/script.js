@@ -44,7 +44,7 @@ $(document).ready(function () {
     if ($('.typing-text').length) {
         new Typed('.typing-text', {
             strings: [
-                'Full Stack Devlopment ',
+                'Full Stack Development ',
                 'DevOps/Cloud ',
                 'GenAI Integration ',
                 'Machine Learning '
